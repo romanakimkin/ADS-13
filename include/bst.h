@@ -13,7 +13,7 @@ class BST {
     Node* right = nullptr;;
   };
   Node* root;
-      root->left = addNode(root->left, val);
+  root->left = addNode(root->left, val);
     } else if (root->value > val) {
       root->right = addNode(root->right, val);
     } else {
@@ -23,7 +23,7 @@ class BST {
   }
   int searchNode(Node* root, const T& val) {
     if (root == nullptr) {
-      return root->count;
+     return root->count;
     } else if (root->value < val) {
       return searchNode(root->left, val);
     } else {
@@ -50,7 +50,7 @@ class BST {
   void Add(const T& val) {
     root = addNode(root, val);
   }
-  int search(const T& val) {
+int search(const T& val) {
     return searchNode(root, val);
   }
   int depth() {
